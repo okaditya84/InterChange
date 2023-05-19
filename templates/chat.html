@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome, {{ user_id }}!</h1>
+    <a href="/logout">Logout</a>
+    <h2>Matched Users</h2>
+    <div id="matched-users">
+        {% for status in matched_statuses %}
+        <div class="status-card">
+            <h3>Status:</h3>
+            <p>{{ status["text"] }}</p>
+            <h3>Discuss:</h3>
+            <button class="btn-discuss" data-user-id="{{ status["user_id"] }}">Discuss</button>
+        </div>
+        {% endfor %}
+    </div>
+    <h2>Post Status</h2>
+    <form id="status-form" method="POST" action="/post_status">
+        <textarea name="status_text" required></textarea>
+        <input type="submit" value="Post">
+    </form>
+    <div id="chat">
+        <h2>Chat</h2>
+        <div id="messages"></div>
+        <form id="message-form">
+            <input type="hidden" id="other-user-id" value="">
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

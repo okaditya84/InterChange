@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Register</h1>
+    <form method="POST" action="/register">
+        <input type="password" name="password" placeholder="Password" required><br>
+        <p>Select your interests:</p>
+        <input type="checkbox" name="interests" value="Technology">Technology<br>
+        <input type="checkbox" name="interests" value="Sports">Sports<br>
+        <input type="checkbox" name="interests" value="Art">Art<br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

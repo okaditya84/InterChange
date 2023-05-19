@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#matched-users {
+    margin-bottom: 20px;
+}
+
+.status-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-discuss {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-discuss:hover {
+    background-color: #45a049;
+}
+
+#chat {
+    margin-top: 20px;
+}
+
+#messages {
+    margin-top: 10px;
+}
+
+#message-form {
+    margin-top: 10px;
+}
+
+#message-input {
+    width: 300px;
+    padding: 5px;
+}
+
+#message-input:focus {
+    outline: none;
+}
+
+#messages p {
+    margin: 5px 0;
+}
