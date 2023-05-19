@@ -46,11 +46,8 @@ We welcome contributions from the community to enhance TopicConnect. To contribu
 
 Please ensure that your contributions align with the project's coding standards and follow best practices.
 
-## License
-
-[Include your license information here]
-
 ## Contact
 
-If you have any questions or suggestions regarding TopicConnect, please feel free to contact us at [email address]. We appreciate your feedback and support!
+If you have any questions or suggestions regarding TopicConnect, please feel free to contact us at aditya.ce21@sot.pdpu.ac.in 
+We appreciate your feedback and support!
 
